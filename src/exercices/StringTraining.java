@@ -160,13 +160,7 @@ public class StringTraining {
      */
     public static String replaceString(String string, String search, String replace) {
 
-        for (int i = 0; i < string.length(); i++) {
-
-            if () { 
-
-                string = string.replaceAll(search, replace);
-            }
-        }
+        string = string.replaceAll(search, replace);
 
         return string;
     }
@@ -179,11 +173,7 @@ public class StringTraining {
     public static String[] split(String string, String delimiter) {
         // https://howtodoinjava.com/java/string/java-string-split-example/
 
-        for(String solution : string.split(delimiter) ) {
-            System.out.println(solution);
-        }
-
-        return null;
+        return string.split(delimiter);
     }
 
     /**
