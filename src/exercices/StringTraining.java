@@ -110,8 +110,7 @@ public class StringTraining {
      */
     public static String capitalize(String string) {
 
-        String cap = string.substring(0, 1).toUpperCase() + string.substring(1);
-        return cap;
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
     }
 
     /**
@@ -126,7 +125,7 @@ public class StringTraining {
         for (int i = 0; i < string.length(); i++) {
 
             if (string.charAt(i) == search) {
-                compteur += 1;
+                compteur ++;
             }
         }
 
@@ -141,15 +140,7 @@ public class StringTraining {
      */
     public static String replaceChar(String string, char search, char replace) {
 
-        for (int i = 0; i < string.length(); i++) {
-
-            if (string.charAt(i) == search) {
-
-                string = string.replace(search, replace);
-            }
-        }
-
-        return string;
+        return string = string.replace(search, replace);
     }
 
     /**
@@ -160,9 +151,8 @@ public class StringTraining {
      */
     public static String replaceString(String string, String search, String replace) {
 
-        string = string.replaceAll(search, replace);
+        return string.replaceAll(search, replace);
 
-        return string;
     }
 
     /**
@@ -184,8 +174,7 @@ public class StringTraining {
     public static String join(String[] strings, String delimiter) {
         // https://howtodoinjava.com/java8/java-8-join-string-array-example/
 
-        String solution = String.join(delimiter, strings);
+        return String.join(delimiter, strings);
 
-        return solution;
     }
 }
