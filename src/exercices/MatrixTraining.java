@@ -100,19 +100,16 @@ public class MatrixTraining {
 
         int count = 0;
 
-        for (int i = 0; i < matrix.length; i++) {
+        for (int[] temp : matrix) { // on parcours le tableau
 
-            sum = matrix[i];
+            for (int i : temp) { // on parcours les valeurs du tableau temp
 
-            count = count + sum;
-
-            for (int j = 0; j < matrix[i].length; j++) {
-
-                count = count + matrix[i][j];
+                count += i;
             }
         }
 
-        return matrix;
+        return count;
+    
     }
 
     /**
@@ -122,7 +119,18 @@ public class MatrixTraining {
      */
     public boolean contains(int[][] matrix, int search) {
 
-        return ;
+        for (int[] temp : matrix) {
+
+            for (int i : temp) {
+
+                if (i == search) {
+
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     /**
@@ -131,7 +139,20 @@ public class MatrixTraining {
      */
     public int countEvens(int[][] matrix) {
 
-        return 0;
+        int count = 0;
+
+        for (int[] temp : matrix) {
+
+            for (int i : temp) {
+
+                if (i%2 == 0) {
+
+                    count++;
+                }
+            }
+        }
+
+        return count;
     }
 
     /**
@@ -141,6 +162,19 @@ public class MatrixTraining {
      */
     public int occurrences(char[][] matrix, char search) {
 
-        return 0;
+        int count = 0;
+
+        for (char[] temp : matrix) {
+            
+            for (char i : temp) {
+
+                if (i == search) {
+
+                    count++;
+                }
+            }
+        }
+
+        return count;
     }
 }
