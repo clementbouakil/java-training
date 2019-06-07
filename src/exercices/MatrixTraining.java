@@ -30,9 +30,9 @@ public class MatrixTraining {
      */
     public int[][] intMatrix(int[] a, int[] b, int[] c) {
 
-        int[] array = {a, b};
+        int[][] array = {a, b, c};
 
-        return new int[array][c];
+        return array;
     }
 
     /**
@@ -43,9 +43,9 @@ public class MatrixTraining {
      */
     public String[][] stringMatrix(String[] a, String[] b, String[] c) {
 
-        String[] array = {a, b};
+        String[][] array = {a, b, c};
 
-        return new String[array][c];
+        return array;
     }
 
     /**
