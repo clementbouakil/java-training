@@ -139,7 +139,7 @@ public class ArrayTraining {
 
         for (int i = 0; i < array.length; i++) {
 
-            array[i] = StringTraining.capitalize(array[i]);
+            array[i] = array[i].substring(0, 1).toUpperCase() + array[i].substring(1);
         }
 
         return array;
